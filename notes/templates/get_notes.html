@@ -1,26 +1,30 @@
-{% extends 'brd_source.html' %}
+{% extends 'brd_source.html' %} {% block content %}
 
-{% block content %}
+<div class="tus-notas">
+  <div class="todo-nota">
+    <h1>Tus notas</h1>
 
+    <span></span>
+  </div>
 
-    <div class="tus-notas">
-        <div class="todo-nota">
+  <div class="list-of-notes">
 
-            <h1>Tus notas</h1>
-            
-            <span></span>
-        </div>
+    <ul class="ul-notes">
 
-        <div class="lista-notas">
-            <ul>
-                {% for note in notes %}
-                <a href='{% url 'notedetail' note.id %}'>
-                    <li>
-                        {{ note.nota }}
-                    </li>
-                </a>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+      {% for note in notes %}
+
+      <div class="container">
+        <p>{{ note.nota }} </p>
+      </div>
+      
+      {% endfor %}
+
+    </ul>
+
+    
+    
+
+  </div>
+</div>
+
 {% endblock %}

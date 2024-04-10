@@ -1,131 +1,156 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-image: linear-gradient(to right, #161616, #000, #000);
-    color: white;
-    font-family: 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  background-image: linear-gradient(to right, #161616, #000, #000);
+  color: white;
+  font-family: "Poppins", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #ffe7e7;
+  text-decoration: none;
+  color: #ffe7e7;
 }
 
-a:hover { 
-    color: #ffa7a7;
+a:hover {
+  color: #ffa7a7;
 }
 
 .nav-all-cn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 .nav-all-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    padding: 1em 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding: 1em 0em;
 }
 
 h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .content-landing {
-    width: 85%;
-    
+  width: 85%;
 }
 
 .sec-crud {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .sec-crud div {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 20px;
 }
 
-.sec-crud div input, textarea {
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
+.sec-crud div input,
+textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
 }
 
 .note-guardar {
-    padding: 0.8rem 1rem;
-    width: 100%;
-    border-radius: 12px;
-    color: white;
-    border: 1px solid transparent;
-    outline: none;
-    background-color: rgb(134, 134, 250);
-    transition: .2s ease-in-out;
-    font-weight: bolder;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 12px;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: rgb(134, 134, 250);
+  transition: 0.2s ease-in-out;
+  font-weight: bolder;
 }
 
 .note-guardar:hover {
-    background: transparent;
-    border: 1px solid rgb(92, 92, 240);
-    font-weight: bolder;
-    color: rgb(92, 92, 240);
-    cursor: pointer;
-    transition: .2s ease-in-out;
+  background: transparent;
+  border: 1px solid rgb(92, 92, 240);
+  font-weight: bolder;
+  color: rgb(92, 92, 240);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .tus-notas {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1em 0em;
-    gap: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 0em;
+  gap: 20px;
 }
 
 .todo-nota {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
 }
 
-.lista-notas {
-    width: 85%;
+.list-of-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.lista-notas ul li {
-    background-image: linear-gradient(30deg, #000, #110808, #000);
-    width: 30%;
+.ul-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 95%;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.container {
+    border: 1px solid #5f3535;
+    padding: 0.5em 1em;
     border-radius: 12px;
-    padding: 1em;
-    list-style-type: none;
-    border: 1px solid #ffd2d2cb;
-}
+    text-overflow: ellipsis;
+    background: linear-gradient(to right, #130505, #190824, #16061a, #0a020e);
+  }
 
+.container p {
+    width: 200px;
+    color: rgb(216, 216, 216);
+    padding: 2px 5px;
+  
+    /* BOTH of the following are required for text-overflow */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+
+  
