@@ -3,9 +3,12 @@
   padding: 0;
   margin: 0;
 }
+html {
+    min-height: 100vh;
+}
 
 body {
-  background-image: linear-gradient(to right, #161616, #000, #000);
+  background-image: linear-gradient(to right, #1f0a0a, #160505, #0e0707, #000);
   color: white;
   font-family: "Poppins", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -123,12 +126,13 @@ textarea {
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
 }
 
 .ul-notes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 95%;
+  width: 100%;
   align-items: center;
   justify-items: center;
   gap: 2rem;
