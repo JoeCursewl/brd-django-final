@@ -3,16 +3,19 @@
   padding: 0;
   margin: 0;
 }
-html {
+
+body {
+  background-image: linear-gradient(to right, #0c0404, #0c0505, #0d060f, #0f0808);
+  color: white;
+  font-family: 'Poppins', "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
 
-body {
-  background-image: linear-gradient(to right, #1f0a0a, #160505, #0e0707, #000);
-  color: white;
-  font-family: "Poppins", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+main {
+  min-height: 100vh
 }
+
 
 a {
   text-decoration: none;
@@ -39,6 +42,11 @@ a:hover {
   padding: 1em 0em;
 }
 
+.logo-brd-god img {
+  width: 40px;
+  height: auto;
+}
+
 h1 {
   font-size: 1.5em;
 }
@@ -54,9 +62,59 @@ nav ul li {
   list-style: none;
 }
 
-.content-landing {
-  width: 85%;
+.title-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
+
+
+.title-notes img {
+  width: 30px;
+  height: auto;
+}
+
+.button-register {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 8px;
+  background-color: rgba(31, 13, 31, 0.288);
+  padding:8px 10px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  color: rgb(204, 172, 211);
+}
+
+.button-register img {
+  width: 20px;
+  height: auto;
+}
+
+.content-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 82vh;
+}
+
+.content-inside-landing {
+  background: linear-gradient(80deg, #0a020e, #0a020e, #0a020e, #0a020e);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4em;
+  border-radius: 12px;
+  border: 1px solid #391c42a9;
+  gap: 30px;
+}
+
 
 .sec-crud {
   display: flex;
@@ -143,18 +201,35 @@ textarea {
     padding: 0.5em 1em;
     border-radius: 12px;
     text-overflow: ellipsis;
-    background: linear-gradient(to right, #130505, #190824, #16061a, #0a020e);
+    background: linear-gradient(to right, #0e0505, #190824, #16061a, #0a020e);
   }
 
 .container p {
-    width: 200px;
+    width: 300px;
     color: rgb(216, 216, 216);
     padding: 2px 5px;
   
-    /* BOTH of the following are required for text-overflow */
     white-space: nowrap;
     overflow: hidden;
   }
-  
 
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1em 0em;
+  }
+
+  footer div img {
+    width: 45px;
+  }
+
+  footer .links-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgb(194, 148, 148);
+  }
   

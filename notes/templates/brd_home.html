@@ -2,12 +2,14 @@
 
 {% block content %}
 
+{% load static %}
+
 <main>
     <div class="nav-all-cn">
      
         <div class="nav-all-items">
-            <div>
-                <h1>BRD Notes</h1>
+            <div class="logo-brd-god">
+                <img src="{% static 'brd-images/logo_recortado.png' %}" alt="">
             </div>
 
             <nav>
@@ -19,12 +21,36 @@
         </div>
 
         <div class="content-landing">
-            <h1>El mundo de las Notas.</h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, blanditiis harum ullam molestiae incidunt minima repellat repudiandae ad itaque necessitatibus laboriosam, 
-                pariatur reiciendis quas nulla molestias natus veritatis totam deleniti?</p>
+            <div class="content-inside-landing">
+                <div class="title-notes">
+                    <img src="{% static 'brd-images/note-django-img.svg' %}" alt="">
+                    <h1>El mundo de las Notas.</h1>
+                </div>
+                
+                <p>
+                    BRD Notes es un programa que te permite tomar notas de forma rápida y sencilla. Es ideal para estudiantes, profesionales o cualquier persona que necesite anotar información importante.
+                </p>
+
+                <div class="button-register"
+                    <a href="/create-note">Registrar nota</a>
+                    <img src="{% static 'brd-images/arrow-god.svg' %}" alt="">
+                </div>
+            </div>
+
         </div>
-        
+
+
+        <footer>
+            <div>
+                <img src="{% static 'brd-images/logo_recortado.png' %}" alt="">
+            </div>
+
+            <div class="links-footer">
+                <p>Breadriuss</p>
+                <p>About</p>
+            </div>
+        </footer>
     </div> 
 </main>
 

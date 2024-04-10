@@ -55,3 +55,15 @@ def note_detail(request, note_id):
                 'form': form,
                 'error': 'Error no se pudo actualizar la nota.'
             })
+        
+
+def note_delete(request, note_id):
+    note = get_object_or_404(Notesreal, pk=note_id)
+    if request.method == 'POST':
+        note.delete()
+        return redirect('getnotes')
+    else:
+        notes = Notesreal.objects.all()
+        return render(request, 'get_notes.html', {
+            'notes': notes
+        })

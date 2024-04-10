@@ -17,6 +17,13 @@
         <button class="note-guardar">Actualizar</button>
     </form>
 
+    <form action="{% url 'note_delete' note.id %}" method="POST">
+        {% csrf_token %}
+        <button>
+            Borrar nota
+        </button>
+    </form>
+
 
     <a href="/">Ir al home</a>
 </section>
