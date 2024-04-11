@@ -140,6 +140,35 @@ textarea {
   border-radius: 12px;
 }
 
+/* BTN ACTIONS */
+
+.btn-delete {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 12px;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: rgb(252, 105, 137);
+  transition: 0.2s ease-in-out;
+  font-weight: bolder;
+}
+
+.btn-delete:hover {
+  background: transparent;
+  border: 1px solid rgb(252, 105, 137);
+  font-weight: bolder;
+  color: rgb(252, 105, 137);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+form {
+  width: 50%;
+}
+
+/* BTN ACTIONS */
+
 .note-guardar {
   padding: 0.8rem 1rem;
   width: 100%;

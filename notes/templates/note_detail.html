@@ -19,7 +19,7 @@
 
     <form action="{% url 'note_delete' note.id %}" method="POST">
         {% csrf_token %}
-        <button>
+        <button class="btn-delete">
             Borrar nota
         </button>
     </form>
