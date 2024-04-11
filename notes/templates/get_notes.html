@@ -14,7 +14,15 @@
       {% for note in notes %}
 
       <div class="container">
-        <p><a href="{% url 'notedetail' note.id  %}">{{ note.nota }}</a></p>
+        <div>
+            <h2>{{ note.nota_author }}</h2>
+
+            <p>{{ note.note_content }}</p>
+        </div>
+
+        <div>
+          <p><a href="{% url 'notedetail' note.id  %}">{{ note.nota }}</a></p>
+        </div>
       </div>
 
       {% endfor %}
