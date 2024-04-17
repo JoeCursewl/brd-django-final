@@ -1,0 +1,80 @@
+.container {
+    border: 0.5px solid #51156e54;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.container p {
+    color: rgb(216, 216, 216);
+    padding: 2px 5px;
+  
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .container div h2 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .list-poems {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .list-all-poems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .arroz-poems {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .content-poem {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-poem textarea {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-color: transparent;
+    resize: none;
+    color: white;
+  }
+
+  @media (max-width: 1030px) {
+    .list-all-poems {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 968px) {
+    .list-all-poems {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .list-all-poems {
+        grid-template-columns: 1fr;
+    }
+
+    .arroz-poems {
+        padding: 1rem;
+      }
+  }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #0c0404, #0c0505, #0d060f, #0f0808);
+  background-image: linear-gradient(30deg, #0e050f, #030303, #0e0e0e, #0e0311);
   color: white;
   font-family: 'Poppins', "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -190,57 +190,7 @@ form {
   transition: 0.2s ease-in-out;
 }
 
-.tus-notas {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1em 0em;
-  gap: 20px;
-}
 
-.todo-nota {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 85%;
-}
-
-.list-of-notes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 3rem;
-  width: 100%;
-}
-
-.ul-notes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  align-items: center;
-  justify-items: center;
-  gap: 2rem;
-}
-
-.container {
-    border: 1px solid #5f3535;
-    padding: 0.5em 1em;
-    border-radius: 12px;
-    text-overflow: ellipsis;
-    background: linear-gradient(to right, #0e0505, #190824, #16061a, #0a020e);
-  }
-
-.container p {
-    width: 300px;
-    color: rgb(216, 216, 216);
-    padding: 2px 5px;
-  
-    white-space: nowrap;
-    overflow: hidden;
-  }
 
   footer {
     display: flex;
