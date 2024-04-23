@@ -28,7 +28,6 @@ def main_page(request):
     return render(request, 'brd_home.html')
 
 
-
 def get_notes(request):
     notes = Notesreal.objects.all()
     return render(request, 'get_notes.html', {
