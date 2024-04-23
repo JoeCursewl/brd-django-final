@@ -1,10 +1,13 @@
 {% extends 'brd_source.html' %} {% block content %}
 
+{% load static %}
+
 <div class="arroz-poems">
-  <div class="">
+  
+  <div class="poems-home">
     <h1>🎉 Tus poemas</h1>
 
-    <span></span>
+    <span><a href="/">Home</a></span>
   </div>
 
   <div class="list-poems">
@@ -16,16 +19,16 @@
       <div class="container">
         
         <div class="content-poem">
-            <h2>{{ note.nota_author }}</h2>
-
-            
-            <textarea name="poema-god" cols="10" rows="30">
-              {{ note.note_content }}
-            </textarea>
+            <img src="{% static 'brd-images/bolt-img.svg' %}" alt="">
+            <h2 class="ellipsis">{{ note.nota_author }}</h2>
+        </div>
+        
+        <div class="all-poem">
+            <textarea readonly="true" name="poema-god" rows="10" spellcheck="false">{{ note.note_content }}</textarea>
         </div>
 
-        <div>
-          <p><a href="{% url 'notedetail' note.id  %}">Ver más...</a></p>
+        <div class="poem-see">
+          <a href="{% url 'notedetail' note.id  %}">Ver más...</a>
         </div>
 
       </div>

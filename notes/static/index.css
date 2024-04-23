@@ -16,6 +16,22 @@ main {
   min-height: 100vh
 }
 
+/* Estilos generales del scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+  height: auto; /* Altura automática */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(36, 35, 35); /* Color gris oscuro */
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1717; /* Color de fondo del track */
+}
+
+
 
 a {
   text-decoration: none;
@@ -210,5 +226,22 @@ form {
     justify-content: center;
     gap: 1rem;
     color: rgb(194, 148, 148);
+  }
+
+  @media (max-width: 1024px) {
+
+    .content-inside-landing {
+      background: linear-gradient(80deg, #0a020e, #0a020e, #0a020e, #0a020e);
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2em;
+      border-radius: 12px;
+      border: 1px solid #391c42a9;
+      gap: 30px;
+    }
+
   }
   

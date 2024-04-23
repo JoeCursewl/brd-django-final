@@ -1,80 +1,141 @@
 .container {
-    border: 0.5px solid #51156e54;
-    padding: 0.5em 1em;
-    border-radius: 12px;
-    text-overflow: ellipsis;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-  }
+  border: 0.5px solid #51156e54;
+  padding: 1em 1em;
+  border-radius: 12px;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  transition: 150ms ease-in-out;
+}
+
+.container:hover {
+  transition: 150ms ease-in-out;
+  border: 1px solid #edb3ff5b;
+}
 
 .container p {
-    color: rgb(216, 216, 216);
-    padding: 2px 5px;
-  
-    white-space: nowrap;
-    overflow: hidden;
-  }
+  color: rgb(216, 216, 216);
+  padding: 2px 5px;
 
-  .container div h2 {
-    font-size: 1rem;
-    font-weight: normal;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-  .list-poems {
-    width: 100%;
-    margin: 2rem 0;
-  }
+.container div h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
 
+.list-poems {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.list-all-poems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.arroz-poems {
+  padding: 2rem;
+  width: 100%;
+}
+
+
+.content-poem {
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-poem img {
+  width: 20px;
+  height: auto;
+}
+
+.ellipsis {
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.all-poem textarea {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-color: transparent;
+  resize: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+}
+
+.all-poem {
+  width: 100%;
+}
+
+.poem-see a {
+  width: 100%;
+  background-color: #302c2c;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: .3s ease-in-out;
+}
+
+.poem-see a:hover {
+  background-color: transparent;
+  border: 1px solid #302c2c;
+  transition: .3s ease-in-out;
+}
+
+.poem-see {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poems-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poems-home h1 {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1030px) {
   .list-all-poems {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 968px) {
+  .list-all-poems {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-all-poems {
+    grid-template-columns: 1fr;
   }
 
   .arroz-poems {
-    padding: 2rem;
-    width: 100%;
+    padding: 1rem;
   }
-
-  .content-poem {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-items: center;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .content-poem textarea {
-    width: 100%;
-    background-color: transparent;
-    outline: none;
-    border-color: transparent;
-    resize: none;
-    color: white;
-  }
-
-  @media (max-width: 1030px) {
-    .list-all-poems {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-  @media (max-width: 968px) {
-    .list-all-poems {
-        grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .list-all-poems {
-        grid-template-columns: 1fr;
-    }
-
-    .arroz-poems {
-        padding: 1rem;
-      }
-  }
+}
